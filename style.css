@@ -1,0 +1,83 @@
+/* шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+/* Стили для всей страницы */
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 20px;
+    
+    background-image: url('images/background.jpg');
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Главный блок для контента */
+.center {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #f0f0f0;
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Навигация */
+.navigation {
+    text-align: center;
+    border-bottom: 1px solid #fcfcfc;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+/* Правило для картинок внутри центрального блока */
+.center img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 3px solid aquamarine;
+}
+
+/* Стили для списков */
+ul, ol {
+    padding-left: 25px;
+    line-height: 1.6;
+}
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+    gap: 10px; /* отступ между картинками */
+  }
+  .image-grid img {
+    width: 100%; /* растягивать картинку на всю ширину ячейки */
+    height: auto;
+  }
